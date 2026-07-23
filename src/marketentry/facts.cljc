@@ -14,16 +14,7 @@
           :rep-provenance "https://secure.csd.gov.za/"
           :corporate-number-owner-authority "CIPC / SARS"
           :corporate-number-legal-basis "Company registration number / tax reference"
-          :corporate-number-provenance "https://www.cipc.co.za/"}
-   "USA" {:name "United States" :owner-authority "GSA/SAM.gov" :legal-basis "FAR"
-          :national-spec "SAM.gov" :provenance "https://sam.gov/"
-          :required-evidence ["EIN record" "SAM.gov registration record" "State business registration record" "SAM UEI verification record"]}
-   "IND" {:name "India" :owner-authority "GeM" :legal-basis "GFR"
-          :national-spec "GeM" :provenance "https://gem.gov.in/"
-          :required-evidence ["GSTIN/PAN record" "GeM seller registration" "MCA extract" "Authorized-representative record"]}
-   "BRA" {:name "Brazil" :owner-authority "Compras.gov.br" :legal-basis "Lei 14.133/2021"
-          :national-spec "Compras.gov.br" :provenance "https://www.gov.br/compras/"
-          :required-evidence ["CNPJ record" "Compras.gov.br registration" "SICAF record" "Authorized-representative record"]}})
+          :corporate-number-provenance "https://www.cipc.co.za/"}})
 
 (defn spec-basis [iso3] (get catalog iso3))
 (defn coverage
